@@ -4,9 +4,9 @@ resource "azurerm_resource_group" "rg" {
   location = each.value.location
 
   tags = {
-    environment = dev
-    owner       = Rohitsharma
-    project     = myproject
+    environment = "dev"
+    owner       = "Rohitsharma"
+    project     = "myproject"
   }
 
   lifecycle {
